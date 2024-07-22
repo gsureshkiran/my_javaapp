@@ -1,3 +1,3 @@
-def build() {
+def maven() {
   mvn package
 }
