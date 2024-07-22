@@ -1,3 +1,3 @@
 def maven() {
-  mvn package
+ sh 'mvn package'
 }
