@@ -13,8 +13,9 @@ pipeline {
             }
             steps{
               script{
-                build.mavne()
-              }
+                build.maven()
+               }
+              
             }
         }
     }
