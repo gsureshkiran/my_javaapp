@@ -6,7 +6,7 @@ withSonarQubeEnv(installationName: 'sonarqube', credentialsId: 'sonarqube') {
 
 }
 def test() {
-  sh 'mvn test
+  sh 'mvn test'
 }
 def junit() {
   def testresult=junit testResults:'/target/surefire-reports/TEST-*.xml'
