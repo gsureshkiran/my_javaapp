@@ -40,7 +40,7 @@ pipeline {
       stage('package'){
         steps{
           script{
-            build.build()
+            build.maven()
           }
         }
       }
