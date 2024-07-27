@@ -4,7 +4,8 @@ pipeline {
     stages{
         stage('download'){
             steps{
-                git 'https://github.com/gsureshkiran/my_javaapp.git'
+                git 'https://github.com/sresrinivas/etoe.git'
+
             }
         }
         stage('compile'){
@@ -30,13 +31,7 @@ pipeline {
            }
           }
         }
-       stage('soanr){
-         steps{
-          script{
-            test.sonar()
-          }
-         }
-       }
+       
       stage('package'){
         steps{
           script{
