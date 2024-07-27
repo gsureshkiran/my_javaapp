@@ -5,3 +5,6 @@ withSonarQubeEnv(installationName: 'sonarqube', credentialsId: 'sonarqube') {
                 }
 
 }
+def test() {
+  sh 'mvn test
+}
